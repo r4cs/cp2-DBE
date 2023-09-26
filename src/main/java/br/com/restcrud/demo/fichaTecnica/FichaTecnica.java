@@ -63,4 +63,23 @@ public class FichaTecnica {
     public void setProducao(String producao) {
         this.producao = producao;
     }
+
+    public void atualizarInformacoes(DadosFichaTecnica dados) {
+        if (dados.direcao() != null) {
+            this.direcao = dados.direcao();
+        }
+        if (dados.elenco() != null) {
+            this.elenco = dados.elenco();
+        }
+        if (dados.roteiro() != null) {
+            this.roteiro = dados.roteiro();
+        }
+        if (dados.classificacao_indicativa() != null) {
+            this.classificacao_indicativa = dados.classificacao_indicativa();
+        }
+        if (dados.producao() != null) {
+            this.producao = dados.producao();
+        }
+
+    }
 }

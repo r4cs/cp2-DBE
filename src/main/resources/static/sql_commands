@@ -1,0 +1,25 @@
+CREATE TABLE FILMES
+(
+    id                       NUMBER,
+    titulo                   VARCHAR2(250) not null,
+    ator_principal           VARCHAR2(250) not null,
+    duracao                  VARCHAR2(3)   not null,
+    ano_de_lancamento        VARCHAR2(4)   not null,
+    pais_de_origem           VARCHAR2(50)  not null,
+    genero                   VARCHAR2(100) not null,
+    direcao                  VARCHAR2(250) not null,
+    elenco                   VARCHAR2(250) not null,
+    roteiro                  VARCHAR2(250) not null,
+    classificacao_indicativa VARCHAR2(100),
+    producao                 VARCHAR2(250) not null,
+    CONSTRAINT filmes_pk PRIMARY KEY (id)
+);
+
+CREATE SEQUENCE filmes_id_seq START WITH 1 INCREMENT BY 1;
+
+CREATE OR REPLACE TRIGGER filmes_insert
+BEFORE INSERT ON FILMES
+FOR EACH ROW
+BEGIN
+    SELECT filmes_id_seq.NEXTVAL INTO :NEW.ID FROM DUAL;
+END;

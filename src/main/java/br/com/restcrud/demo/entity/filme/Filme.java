@@ -100,4 +100,29 @@ public class Filme {
     public void setFicha_tecnica(FichaTecnica ficha_tecnica) {
         this.ficha_tecnica = ficha_tecnica;
     }
+
+    public void atualizarInformacoes(DadosAtualizacaoFilme dados) {
+        if (dados.titulo() != null) {
+            this.titulo = dados.titulo();
+        }
+        if (dados.ator_principal() != null) {
+            this.ator_principal = dados.ator_principal();
+        }
+        if (dados.duracao() != null) {
+            this.duracao = dados.duracao();
+        }
+        if (dados.ano_de_lancamento() != null) {
+            this.ano_de_lancamento = dados.ano_de_lancamento();
+        }
+        if (dados.pais_de_origem() != null) {
+            this.pais_de_origem = dados.pais_de_origem();
+        }
+        if (dados.genero() != null) {
+            this.genero = dados.genero();
+        }
+        if (dados.ficha_tecnica() != null) {
+            this.ficha_tecnica.atualizarInformacoes(dados.ficha_tecnica());
+        }
+
+    }
 }

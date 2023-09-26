@@ -1,6 +1,7 @@
 package br.com.restcrud.demo.entity.filme;
 
 public record DadosListagemFilme(
+        Long id,
         String titulo,
         String atorPrincipal,
         String duracao,
@@ -9,6 +10,7 @@ public record DadosListagemFilme(
 ) {
     public DadosListagemFilme(Filme filme) {
         this(
+                filme.getId(),
                 filme.getTitulo(),
                 filme.getAtor_principal(),
                 filme.getDuracao(),
