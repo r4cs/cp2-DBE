@@ -4,7 +4,8 @@
 ( DELETE | METODO: "PUT" | endpoint: / filmes )
 
 *** jsons para cadastro:
--- 1
+-- status 200
+-- id 1
 {
   "titulo": "Alien",
   "ator_principal": "Sigourney Beaver",
@@ -21,7 +22,8 @@
   }
 }
 
--- 2
+-- status 200
+-- id 2
 {
   "titulo": "Aliens",
   "ator_principal": "Sigourney Weaver",
@@ -38,6 +40,7 @@
   }
 }
 
+-- status 200
 -- 3
 {
   "titulo": "Clue",
@@ -55,6 +58,7 @@
   }
 }
 
+-- status 200
 -- 4
 {
   "titulo": "1984",
@@ -72,6 +76,7 @@
   }
 }
 
+-- status 200
 --5
 {
   "titulo": "The Rocky Horror Picture Show",
@@ -89,6 +94,7 @@
   }
 }
 
+-- status 200
 -- 6
 {
   "titulo": "Fear and Loathing in Las Vegas",
@@ -106,6 +112,7 @@
   }
 }
 
+-- status 200
 -- 7
 {
   "titulo": "Alien 3",
@@ -124,6 +131,7 @@
 }
 
 *** json para atualizar:
+-- status 200
 jsons para cadastro:
 {
   "id": 1,
@@ -143,6 +151,7 @@ jsons para cadastro:
 }
 
 *** JSON PARA DELETE
+-- status 200
 jsons para cadastro:
 {
   "id": 1
@@ -162,5 +171,24 @@ jsons para cadastro:
 }
 
 
+
+*** TESTES DE CONSTRAINTS
+-- cadastro
+-- status 500
+{
+  "titulo": null,
+  "ator_principal": "Johnny Depp",
+  "duracao": "118",
+  "ano_de_lancamento": "1998",
+  "pais_de_origem": "USA",
+  "genero": "DRAMA",
+  "ficha_tecnica": {
+    "direcao": "Terry Gilliam",
+    "elenco": "Johnny Depp, Benicio Del Toro",
+    "roteiro": "Terry Gilliam, Tony Grisoni",
+    "classificacao_indicativa": null,
+    "producao": "Laila Nabulsi"
+  }
+}
 
 
