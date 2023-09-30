@@ -20,7 +20,7 @@ CREATE TABLE FILMES
 
 2) CREATE SEQUENCE filmes_id_seq START WITH 1 INCREMENT BY 1;
 -- [2023-09-27 17:26:39] [42000][955] ORA-00955: nome já está sendo usado por um objeto existente
---   [2023-09-27 17:26:39] Position: 16 ??? oracle cria sozinho? talvez nao precise usar essa linha
+-- [2023-09-27 17:26:39] Position: 16 ??? oracle cria sozinho? talvez nao precise usar essa linha
 
 
 3)
