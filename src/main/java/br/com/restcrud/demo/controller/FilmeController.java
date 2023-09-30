@@ -24,9 +24,11 @@ public class FilmeController {
     }
 
     @GetMapping
-    public Page<DadosListagemFilme> listar (
-            @PageableDefault(size=5, sort={"titulo"}) Pageable paginacao) {
-        return repository.findAll(paginacao).map(DadosListagemFilme::new);
+    public Page<DadosListagemFilme> listar ( @PageableDefault(size=5, sort={"titulo"})
+            Pageable paginacao
+    ) {
+//        return repository.findAll(paginacao).map(DadosListagemFilme::new);
+        return repository.findAllByAtivoTrue(paginacao).map(DadosListagemFilme::new);
     }
 
     @PutMapping
@@ -36,5 +38,20 @@ public class FilmeController {
         filme = repository.getReferenceById(dados.id());
         filme.atualizarInformacoes(dados);
     }
+
+//    @DeleteMapping("/{id}")
+//    @Transactional
+//    public void excluir(@PathVariable Long id) {
+//        repository.deleteById(id);
+//    }
+
+    @DeleteMapping("/{id}")
+    @Transactional
+    public void excluir(@PathVariable Long id) {
+        Filme filme = new Filme();
+        filme = repository.getReferenceById(id);
+        filme.excluir();
+    }
+
 
 }

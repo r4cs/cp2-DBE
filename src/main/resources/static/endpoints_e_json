@@ -1,0 +1,111 @@
+{
+  "titulo": "Alien",
+  "ator_principal": "Sigourney Weaver",
+  "duracao": "117",
+  "ano_de_lancamento": "1979",
+  "pais_de_origem": "USA",
+  "genero": "SUSPENSE",
+  "ficha_tecnica": {
+    "direcao": "Ridley Scott",
+    "elenco": "Sigourney Weaver, Tom Skerritt",
+    "roteiro": "Dan O'Bannon",
+    "classificacao_indicativa": "R",
+    "producao": "Gordon Carroll"
+  }
+}
+
+{
+  "titulo": "Aliens",
+  "ator_principal": "Sigourney Weaver",
+  "duracao": "137",
+  "ano_de_lancamento": "1986",
+  "pais_de_origem": "USA",
+  "genero": "SUSPENSE",
+  "ficha_tecnica": {
+    "direcao": "James Cameron",
+    "elenco": "Sigourney Weaver, Michael Biehn",
+    "roteiro": "James Cameron",
+    "classificacao_indicativa": "R",
+    "producao": "Gale Anne Hurd"
+  }
+}
+
+{
+  "titulo": "Clue",
+  "ator_principal": "Tim Curry",
+  "duracao": "94",
+  "ano_de_lancamento": "1985",
+  "pais_de_origem": "USA",
+  "genero": "COMEDIA",
+  "ficha_tecnica": {
+    "direcao": "Jonathan Lynn",
+    "elenco": "Tim Curry, Madeline Kahn",
+    "roteiro": "Jonathan Lynn",
+    "classificacao_indicativa": "PG",
+    "producao": "John Landis"
+  }
+}
+
+{
+  "titulo": "1984",
+  "ator_principal": "John Hurt",
+  "duracao": "113",
+  "ano_de_lancamento": "1984",
+  "pais_de_origem": "UK",
+  "genero": "DRAMA",
+  "ficha_tecnica": {
+    "direcao": "Michael Radford",
+    "elenco": "John Hurt, Richard Burton",
+    "roteiro": "George Orwell",
+    "classificacao_indicativa": "R",
+    "producao": "Simon Perry"
+  }
+}
+
+{
+  "titulo": "The Rocky Horror Picture Show",
+  "ator_principal": "Tim Curry",
+  "duracao": "100",
+  "ano_de_lancamento": "1975",
+  "pais_de_origem": "USA",
+  "genero": "COMEDIA",
+  "ficha_tecnica": {
+    "direcao": "Jim Sharman",
+    "elenco": "Tim Curry, Susan Sarandon",
+    "roteiro": "Jim Sharman, Richard O'Brien",
+    "classificacao_indicativa": "R",
+    "producao": "Lou Adler"
+  }
+}
+
+{
+  "titulo": "Fear and Loathing in Las Vegas",
+  "ator_principal": "Johnny Depp",
+  "duracao": "118",
+  "ano_de_lancamento": "1998",
+  "pais_de_origem": "USA",
+  "genero": "DRAMA",
+  "ficha_tecnica": {
+    "direcao": "Terry Gilliam",
+    "elenco": "Johnny Depp, Benicio Del Toro",
+    "roteiro": "Terry Gilliam, Tony Grisoni",
+    "classificacao_indicativa": "R",
+    "producao": "Laila Nabulsi"
+  }
+}
+
+{
+  "titulo": "Alien 3",
+  "ator_principal": "Sigourney Weaver",
+  "duracao": "114",
+  "ano_de_lancamento": "1992",
+  "pais_de_origem": "USA",
+  "genero": "SUSPENSE",
+  "ficha_tecnica": {
+    "direcao": "David Fincher",
+    "elenco": "Sigourney Weaver, Charles S. Dutton",
+    "roteiro": "David Giler, Walter Hill",
+    "classificacao_indicativa": "R",
+    "producao": "David Giler"
+  }
+}

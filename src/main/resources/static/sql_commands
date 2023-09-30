@@ -16,6 +16,8 @@ CREATE TABLE FILMES
 );
 
 CREATE SEQUENCE filmes_id_seq START WITH 1 INCREMENT BY 1;
+-- [2023-09-27 17:26:39] [42000][955] ORA-00955: nome já está sendo usado por um objeto existente
+--   [2023-09-27 17:26:39] Position: 16 ??? oracle cria sozinho?
 
 CREATE OR REPLACE TRIGGER filmes_insert
 BEFORE INSERT ON FILMES
@@ -23,3 +25,6 @@ FOR EACH ROW
 BEGIN
     SELECT filmes_id_seq.NEXTVAL INTO :NEW.ID FROM DUAL;
 END;
+
+ALTER TABLE FILMES
+ADD ativo NUMBER DEFAULT 1 NOT NULL;

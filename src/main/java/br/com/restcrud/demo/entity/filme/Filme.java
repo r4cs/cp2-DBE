@@ -9,8 +9,6 @@ public class Filme {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "filme_id_seq")
-//    @SequenceGenerator(name="filme_id_seq", sequenceName = "filme_id_seq")
     private Long id;
 
     private String titulo;
@@ -22,6 +20,7 @@ public class Filme {
     private Genero genero;
     @Embedded
     private FichaTecnica ficha_tecnica;
+    private Boolean ativo;
 
     public Filme(DadosCadastroFilme dados) {
         this.titulo = dados.titulo();
@@ -31,6 +30,7 @@ public class Filme {
         this.pais_de_origem = dados.pais_de_origem();
         this.genero = dados.genero();
         this.ficha_tecnica = new FichaTecnica(dados.ficha_tecnica());
+        this.ativo = true;
     }
 
     public Filme() {
@@ -99,6 +99,18 @@ public class Filme {
 
     public void setFicha_tecnica(FichaTecnica ficha_tecnica) {
         this.ficha_tecnica = ficha_tecnica;
+    }
+
+    public Boolean getAtivo() {
+        return ativo;
+    }
+
+    public void setAtivo(Boolean ativo) {
+        this.ativo = ativo;
+    }
+
+    public void excluir() {
+        this.ativo = false;
     }
 
     public void atualizarInformacoes(DadosAtualizacaoFilme dados) {
