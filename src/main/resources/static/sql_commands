@@ -1,3 +1,4 @@
+1)
 CREATE TABLE FILMES
 (
     id                       NUMBER,
@@ -12,19 +13,20 @@ CREATE TABLE FILMES
     roteiro                  VARCHAR2(250) not null,
     classificacao_indicativa VARCHAR2(100),
     producao                 VARCHAR2(250) not null,
+    ativo                    NUMBER DEFAULT 1 not null,
     CONSTRAINT filmes_pk PRIMARY KEY (id)
 );
 
-CREATE SEQUENCE filmes_id_seq START WITH 1 INCREMENT BY 1;
--- [2023-09-27 17:26:39] [42000][955] ORA-00955: nome já está sendo usado por um objeto existente
---   [2023-09-27 17:26:39] Position: 16 ??? oracle cria sozinho?
 
+2) CREATE SEQUENCE filmes_id_seq START WITH 1 INCREMENT BY 1;
+-- [2023-09-27 17:26:39] [42000][955] ORA-00955: nome já está sendo usado por um objeto existente
+--   [2023-09-27 17:26:39] Position: 16 ??? oracle cria sozinho? talvez nao precise usar essa linha
+
+
+3)
 CREATE OR REPLACE TRIGGER filmes_insert
 BEFORE INSERT ON FILMES
 FOR EACH ROW
 BEGIN
     SELECT filmes_id_seq.NEXTVAL INTO :NEW.ID FROM DUAL;
 END;
-
-ALTER TABLE FILMES
-ADD ativo NUMBER DEFAULT 1 NOT NULL;

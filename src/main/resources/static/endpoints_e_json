@@ -172,7 +172,7 @@ jsons para cadastro:
 
 
 
-*** TESTES DE CONSTRAINTS
+*** TESTES DE VALIDACAO com o campo titulo
 -- cadastro
 -- status 500
 {
@@ -190,5 +190,10 @@ jsons para cadastro:
     "producao": "Laila Nabulsi"
   }
 }
+
+*** TESTES DE ENDPOINT
+-- atualizar
+-- endpoint: /filmes/atualizar/1
+-- retorno 400
 
 
