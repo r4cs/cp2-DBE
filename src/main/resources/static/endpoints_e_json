@@ -1,6 +1,13 @@
+( CADASTRAR | METODO: "POST" | endpoint: / filmes )
+( LISTAR | METODO: "GET" | endpoint: / filmes )
+( ATUALIZAR | METODO: "PUT" | endpoint: / filmes )
+( DELETE | METODO: "PUT" | endpoint: / filmes )
+
+*** jsons para cadastro:
+-- 1
 {
   "titulo": "Alien",
-  "ator_principal": "Sigourney Weaver",
+  "ator_principal": "Sigourney Beaver",
   "duracao": "117",
   "ano_de_lancamento": "1979",
   "pais_de_origem": "USA",
@@ -14,6 +21,7 @@
   }
 }
 
+-- 2
 {
   "titulo": "Aliens",
   "ator_principal": "Sigourney Weaver",
@@ -30,6 +38,7 @@
   }
 }
 
+-- 3
 {
   "titulo": "Clue",
   "ator_principal": "Tim Curry",
@@ -46,6 +55,7 @@
   }
 }
 
+-- 4
 {
   "titulo": "1984",
   "ator_principal": "John Hurt",
@@ -62,6 +72,7 @@
   }
 }
 
+--5
 {
   "titulo": "The Rocky Horror Picture Show",
   "ator_principal": "Tim Curry",
@@ -78,6 +89,7 @@
   }
 }
 
+-- 6
 {
   "titulo": "Fear and Loathing in Las Vegas",
   "ator_principal": "Johnny Depp",
@@ -94,6 +106,7 @@
   }
 }
 
+-- 7
 {
   "titulo": "Alien 3",
   "ator_principal": "Sigourney Weaver",
@@ -109,3 +122,45 @@
     "producao": "David Giler"
   }
 }
+
+*** json para atualizar:
+jsons para cadastro:
+{
+  "id": 1,
+  "titulo": "Alien",
+  "ator_principal": "Sigourney Weaver",
+  "duracao": "117",
+  "ano_de_lancamento": "1979",
+  "pais_de_origem": "USA",
+  "genero": "SUSPENSE",
+  "ficha_tecnica": {
+    "direcao": "Ridley Scott",
+    "elenco": "Sigourney Weaver, Tom Skerritt",
+    "roteiro": "Dan O'Bannon",
+    "classificacao_indicativa": null,
+    "producao": "Gordon Carroll"
+  }
+}
+
+*** JSON PARA DELETE
+jsons para cadastro:
+{
+  "id": 1
+  "titulo": "Alien",
+  "ator_principal": "Sigourney Weaver",
+  "duracao": "117",
+  "ano_de_lancamento": "1979",
+  "pais_de_origem": "USA",
+  "genero": "SUSPENSE",
+  "ficha_tecnica": {
+    "direcao": "Ridley Scott",
+    "elenco": "Sigourney Weaver, Tom Skerritt",
+    "roteiro": "Dan O'Bannon",
+    "classificacao_indicativa": null,
+    "producao": "Gordon Carroll"
+  }
+}
+
+
+
+

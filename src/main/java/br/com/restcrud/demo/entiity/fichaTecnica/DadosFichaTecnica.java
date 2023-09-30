@@ -1,4 +1,8 @@
-package br.com.restcrud.demo.fichaTecnica;
+// DUPLA:
+// RAQUEL CALMON (RM97373)
+// MARIO ITO (RM96950)
+
+package br.com.restcrud.demo.entiity.fichaTecnica;
 
 import jakarta.validation.constraints.NotBlank;
 

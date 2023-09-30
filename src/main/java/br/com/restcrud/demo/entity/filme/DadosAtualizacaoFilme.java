@@ -1,10 +1,11 @@
+// DUPLA:
+// RAQUEL CALMON (RM97373)
+// MARIO ITO (RM96950)
+
 package br.com.restcrud.demo.entity.filme;
 
-import br.com.restcrud.demo.fichaTecnica.DadosFichaTecnica;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotBlank;
+import br.com.restcrud.demo.entiity.fichaTecnica.DadosFichaTecnica;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Pattern;
 
 public record DadosAtualizacaoFilme (
         @NotNull
